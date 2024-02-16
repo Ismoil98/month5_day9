@@ -52,3 +52,9 @@ nav a:hover {
     bottom: 30px;
     left: 43%;
 }
+
+.phone .content .phoneClosk {
+    color: white;
+    font-size: 28px;
+    text-align: center;
+}
