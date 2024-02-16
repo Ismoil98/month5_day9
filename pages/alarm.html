@@ -7,6 +7,7 @@
     <title>Alarm</title>
     <link rel="stylesheet" href="../styles/styles.css">
     <link rel="shortcut icon" href="../images/my_logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 <body>
     <nav class="container">
@@ -20,17 +21,26 @@
     </nav>
 
     <div class="phone">
+
         <div class="content">
             <audio class="alarm-audio">
                 <source src="../audios/alarm-ringtone.mp3" type="audio/mp3" />
               </audio>
           
-              <button class="play-alarm">Play</button>
-              <button class="stop-alarm">Stop</button>
+              <div class="alarmContent">
+                <button class="play-alarm">Play</button>
+                <button class="stop-alarm">Stop</button>
+              </div>
+              <form>
+                <input type="text" id="myText" value="16:00:00">
+                <button onclick="myFunction()">Try it</button>
+                <p id="demo"></p>
+              </form>
         </div>
         <span class="btn"></span>
     </div>
 
     <script src="../main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>

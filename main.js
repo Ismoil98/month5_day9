@@ -3,14 +3,19 @@ const audio = document.querySelector('.alarm-audio');
 const playAlarm = document.querySelector('.play-alarm');
 const stopAlarm = document.querySelector('.stop-alarm');
 
-setInterval(() => {
-  let date = new Date();
-  let time = date.toLocaleTimeString('it-IT');
-  console.log(time);
-  if (time === '15:27:00') {
-    audio.play();
-  }
-}, 1000);
+function myFunction() {
+    event.preventDefault();
+    let x = document.getElementById("myText").value;
+    document.getElementById("demo").innerHTML = x;
+    setInterval(() => {
+        let date = new Date();
+        let time = date.toLocaleTimeString('it-IT');
+        if (time === x) {
+            audio.play();
+        }
+    }, 1000);
+    console.log(x);
+}
 
 playAlarm.addEventListener('click', () => {
   audio.play();
